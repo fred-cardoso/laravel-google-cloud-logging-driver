@@ -1,0 +1,39 @@
+{
+  "name": "fred-cardoso/laravel-google-cloud-logging-driver",
+  "description": "Provides logging for Laravel applications in Google Cloud Logging environment",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/fred-cardoso/laravel-google-cloud-logging-driver",
+  "authors": [
+    {
+      "name": "Frederico Cardoso",
+      "email": "geral@fredcardoso.pt"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FredCardoso\\Laravel\\Logging\\GoogleCloudDriver\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.1.3",
+    "monolog/monolog": "^1.12|^2.0",
+    "google/cloud-logging": "^1.18"
+  },
+  "require-dev": {
+    "illuminate/contracts": "^6.20|^7.29|^8.12",
+    "illuminate/support": "^6.20|^7.29|^8.12"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FredCardoso\\Laravel\\Logging\\GoogleCloudDriver\\ServiceProvider"
+      ]
+    }
+  }
+}

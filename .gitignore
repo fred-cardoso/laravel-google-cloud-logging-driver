@@ -1,0 +1,8 @@
+# IDEA Folder
+.idea/
+
+# Vendor folder
+/vendor/
+
+# Composer lock file
+composer.lock
